@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- @sezeranoJchrisostome -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/output.css">
+    <link href="http://fonts.cdnfonts.com/css/helvetica-neue-4" rel="stylesheet">
+    <title>Stripe | Payment Processing Platform for the Internet</title>
+</head>
+
+<body class="font-default overflow-x-hidden min-h-full  min-w-full relative">
+
+    <!-- ============ start: grid lines ==================== -->
+    <div class="grid grid-cols-4 min-h-full fixed top  w-[1290px] max-w-[80%] left-[50%] -translate-x-[50%] z-30 ">
+        <div class="border border-slate-500/20 border-r-0"></div>
+        <div class="border border-slate-500/20 border-dashed"></div>
+        <div class="border border-slate-500/20 border-dashed border-l-0"></div>
+        <div class="border border-slate-500/20 border-l-0"></div>
+    </div>
+    <!-- ============== end: grid lines ==================== -->
+
+
+    <!-- ================= start: header =================== -->
+    <div class="relative">
+        <div class="-z-20 w-[inherit] absolute h-screen -skew-y-6 -translate-y-40">
+           <img class="w-full h-full -z-20 relative" src="./assets/images/gradient.PNG" alt="Gradient icon">
+        </div>
+        <div class="w-[1290px] max-w-[80%] mx-auto">
+            <div class=" py-6">
+                <div class="flex justify-between">
+                    <div class="logo">
+                        <img class="w-12" src="./assets/images/logo.png" alt="Logo icon">
+                    </div>
+                    <ul class="flex text-white gap-6 text-[14px] font-bold">
+                        <li class="">
+                            <a href="#">Products</a>
+                        </li>
+                        <li class="">
+                            <a href="#">Solutions</a>
+                        </li>
+                        <li class="">
+                            <a href="#">Developers</a>
+                        </li>
+                        <li class="">
+                            <a href="#">Resources</a>
+                        </li>
+                        <li class="">
+                            <a href="#">Pricing</a>
+                        </li>
+                    </ul>
+                    <div class="">
+                        <button class="text-white bg-white bg-white/30 font-bold px-4 py-2 rounded-full">
+                            Sign In 
+                        </button>
+                    </div>
+                </div>
+                <!-- =========================== Start: header: content ========================= -->
+                <div class="grid grid-cols-2 py-6">
+                    <div class="relative h-[571px] flex flex-col justify-center">
+                        <!-- =========== start: text ============= -->
+                        <div class=" p-0 top-0 bg-clip-text left-0 font-medium leading-[1.0] text-[90px] flex flex-col  text-[#3a3a3a] ">
+                            <span>
+                                Financial
+                            </span>
+                            <span>
+                                infrastructure
+                            </span>
+                            <span class="">
+                                for the internet
+                            </span>
+                        </div>
+                        <!-- ========= end: text overlay ========= -->
+
+                        <!-- ============= start: quotes ========= -->
+                        <div class="">
+                            Millions of companies of all sizes—from startups to Fortune 
+                            500s—use Stripe's software and APIs 
+                            to accept payments, send payouts, and manage their businesses online.
+                        </div>
+                        <!-- ============= end: quotes =========== -->
+
+                        <!-- ============= start: buttons ========= -->
+                        <div class="flex items-center mt-9 z-50">
+                            <button class="z-50 flex items-center gap-2 group bg-stripblack-800 text-white font-bold hover:bg-stripblack-800/40  px-6 py-2  rounded-full cursor-pointer">
+                                <span>
+                                    Start now
+                                </span>
+                                <span class="flex relative">
+                                    <span class="absolute opacity-0 group-hover:opacity-100 transition-all duration-300   top-0 left-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                                        </svg>
+                                    </span>
+                                    <span class="opacity-100 group-hover:opacity-0 transition-all duration-300">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                        </svg>
+                                    </span>
+                                </span>
+                            </button>
+                            <button class="z-50 flex items-center gap-2 group bg-transparent font-bold text-white px-6 py-2  rounded-full cursor-pointer">
+                                <span class=" text-stripblack-800 hover:text-stripblack-800/40 ">
+                                    Contact sales
+                                </span>
+                                <span class="flex relative">
+                                    <span class="absolute opacity-0 group-hover:opacity-100 transition-all duration-300  top-0 left-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#425466" class="w-4 h-4 ">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                                        </svg>
+                                    </span>
+                                    <span class="opacity-100 group-hover:opacity-0 transition-all duration-300">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#425466" class="w-4 h-4">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                        </svg>
+                                    </span>
+                                </span>                      
+                            </button>
+                        </div>
+                        <!-- ============= end: buttons ========= -->
+                    </div>
+                    <div class="relative">
+                        <div class="absolute flex w-full left-[20%]">
+                            <!-- ==================== Start: Dashboard ===================== -->
+                            <div class="ml-20 bg-white/50  min-w-[900px]  relative rounded-[8px] shadow-dashboard p-3 flex gap-4  ">
+                                <div class="sidebar ">
+                                    <div class="flex items-center gap-4">
+                                        <svg width="20" height="20" viewBox="0 0 20 20">
+                                            <path fill="#FFF" d="M10 0a10 10 0 1 1 0 20 10 10 0 0 1 0-20zm3.3 6.11H4.34a.41.41 0 0 0 0 .83h8.94a2.89 2.89 0 0 1 0 5.77H7.65a.41.41 0 0 0 0 .83h5.64a3.71 3.71 0 0 0 0-7.43zm0 1.65a2.06 2.06 0 1 0 2.05 2.06c0-1.13-.92-2.06-2.06-2.06zm-2.83 3.3h-4.7a.41.41 0 0 0 0 .83h4.7a.41.41 0 0 0 0-.83zM13.3 8.6a1.24 1.24 0 1 1 0 2.47 1.24 1.24 0 0 1 0-2.47zm-3.3.8H3.41a.41.41 0 1 0 0 .83h6.6c.22 0 .4-.19.4-.42a.41.41 0 0 0-.41-.4zm.47-1.65H6.24a.41.41 0 1 0 0 .83h4.23a.41.41 0 1 0 0-.83z"></path>
+                                        </svg>
+                                        <div class=" text-white font-bold text-MD">Rocket Rides</div>
+                                        <svg width="10" height="5" viewBox="0 0 10 4">
+                                            <polyline fill="none" stroke="#FFF" points="1 0 5 4 9 0"></polyline>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class=" flex flex-col gap-4 justify-between  w-full h-full ">
+                                    <div class="grid grid-cols-2">
+                                        <!-- =========== start: input =============== -->
+                                        <div class="w-full bg-white rounded-md  px-3 flex items-center">
+                                            <svg width="10" height="12" viewBox="0 0 10 10">
+                                                <circle cx="4" cy="4" r="3.5" fill="none" stroke="#62788D"></circle>
+                                                <path fill="#62788D" d="M6.15 6.15c.2-.2.5-.2.7 0l2.12 2.12a.5.5 0 1 1-.7.7L6.15 6.85a.5.5 0 0 1 0-.7z"></path>
+                                            </svg>
+                                            <input class="px-3" type="text" name="" placeholder="Search">
+                                        </div>
+                                        <!-- ============= end: input =============== -->
+                                        <!-- =========== start: icons =============== -->
+                                        <div class="w-full ">
+                                            <div class="float-right">
+                                                <svg width="70" height="12" viewBox="0 0 70 12">
+                                                    <path fill="#515de1" d="M3.12 10.5h3.76C6.7 11.37 5.91 12 5 12c-.91 0-1.7-.63-1.88-1.5zm5.72-3.7l.94.92c.22.22.28.54.16.82a.77.77 0 0 1-.7.46H.76a.77.77 0 0 1-.71-.46.74.74 0 0 1 .16-.82l.94-.92V3.75A3.8 3.8 0 0 1 5 0a3.8 3.8 0 0 1 3.84 3.75V6.8z"></path>
+                                                    <path fill="#525F7F" d="M34 12a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm-.75-5.93v.3a.75.75 0 0 0 1.44.29 2.63 2.63 0 1 0-3.32-2.53.75.75 0 0 0 1.51-.01A1.13 1.13 0 0 1 34 3a1.12 1.12 0 0 1 0 2.23.75.75 0 0 0-.75.83zM34 10.5a1.13 1.13 0 1 0 0-2.25 1.13 1.13 0 0 0 0 2.25zm30-2.25c1.09 0 2.13-.41 2.92-1.15l1.33.5A2.7 2.7 0 0 1 70 10.12v1.12c0 .41-.34.75-.75.75h-10.5a.75.75 0 0 1-.75-.75v-1.13C58 9 58.7 8 59.76 7.6l1.32-.5A4.23 4.23 0 0 0 64 8.26zM63.85 0h.3a2.63 2.63 0 0 1 2.61 2.84l-.12 1.48a2.65 2.65 0 0 1-5.28 0l-.12-1.48A2.63 2.63 0 0 1 63.85 0z"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <!-- ============= end: icon =============== -->
+                                    </div>
+                                    <img class=" rounded-lg shadow-md " src="./assets/images/chart1.PNG" alt="chart 1">
+                                    <img class=" rounded-lg shadow-md " src="./assets/images/char2.PNG" alt="chart 2">
+                                </div>
+                            </div>
+                            <!-- ==================== End: Dashboard ===================== -->
+                            <!-- ==================== Start: Dash phone ===================== -->
+                            <div class="phone top-10 absolute bg-track-100 h-[517px] w-[248px] rounded-[36px] p-[8px] shadow-dash">
+                                <!-- =================== start: screen ============ -->
+                                <div class="screen min-h-full min-w-full bg-white rounded-[36px]">
+                                    <div class="p-3">
+                                        <div class="w-full flex justify-center py-5">
+                                            <img class="h-[80px] w-[56px]" src="./assets/images/cloud.PNG" alt="">
+                                        </div>
+                                        <div class="text-center flex-col gap-1 flex flex-shrink-0 flex-grow-0">
+                                            <div class="text-[12px] text-stripblack-800">
+                                                Increment Magazine
+                                            </div>           
+                                            <div class="text-[11px] font-light text-stripblack-800">
+                                                $14 per quarter
+                                            </div>
+                                        </div>
+                                        <div class="pay-section">
+                                            <button class=" bg-stripblack-800 w-full py-2 rounded flex justify-center items-center">
+                                                <svg class="w-[32px] h-[14px]" viewBox="0 0 32 14">
+                                                    <path fill="#FFF" d="M25.94 4.22l1.62 5.23h.03l1.62-5.23h1.4l-2.41 6.77c-.56 1.55-1.19 2.06-2.52 2.06-.1 0-.44 0-.53-.03v-1.06l.4.02c.6 0 .95-.26 1.16-.92l.12-.4-2.32-6.44h1.43zM7.4 3.43c.31.03 1.2.12 1.76.96C9.1 4.43 8.1 5 8.1 6.22c.01 1.45 1.27 1.94 1.29 1.95-.02.04-.2.69-.66 1.36-.4.59-.82 1.17-1.47 1.18-.64.01-.85-.38-1.58-.38-.73 0-.97.37-1.57.4-.63.01-1.11-.64-1.51-1.23-.83-1.19-1.45-3.36-.6-4.83a2.32 2.32 0 0 1 1.97-1.2c.63-.01 1.2.41 1.58.41.38 0 1.05-.5 1.83-.45zm14 .71c1.57 0 2.6.82 2.6 2.1v4.4h-1.27V9.6h-.03a2.26 2.26 0 0 1-2.02 1.12c-1.28 0-2.17-.76-2.17-1.9 0-1.13.87-1.78 2.46-1.88l1.7-.1v-.5c0-.72-.46-1.11-1.3-1.11-.7 0-1.2.36-1.3.9h-1.24c.04-1.15 1.12-1.98 2.57-1.98zm-6.13-2.35c1.71 0 2.9 1.18 2.9 2.9a2.8 2.8 0 0 1-2.95 2.93h-1.9v3.03h-1.36V1.79h3.3zm7.4 5.95l-1.52.1c-.85.06-1.3.38-1.3.93s.46.9 1.2.9c.92 0 1.63-.6 1.63-1.43v-.5zm-7.76-4.8h-1.58v3.53h1.57c1.2 0 1.87-.65 1.87-1.77 0-1.11-.68-1.75-1.86-1.75zM7.4 1.12c.06.57-.16 1.13-.5 1.54-.34.4-.88.73-1.42.68-.07-.55.2-1.13.5-1.48.35-.42.94-.71 1.42-.74z"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="payline relative">
+                                            <hr class="my-5 m-auto">
+                                            <div class="text-center absolute top-0 left-[50%] -translate-x-[50%] -translate-y-[50%]">
+                                                <p class="text-[11px]   m-auto font-light text-stripblack-800  bg-white">
+                                                    Or pay with card
+                                                </p>
+                                            </div>
+                                            <div class="form">
+                                                <img src="./assets/images/form.PNG" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- =================== end: screen ============ -->
+                            </div>
+                            <!-- ====================== End: Dash phone ===================== -->
+                        </div>
+                    </div>
+                </div>
+                <!-- =========================== End: header: content ========================= -->
+            </div>
+        </div>
+    </div> 
+    <!-- ================= end: header ===================== -->
+
+   
+    <!-- =============== start: brands =============== -->
+    <div class="bg-white  pb-[6rem] z-50">
+        <div class="w-[1290px] max-w-[80%] mx-auto">
+            <div class="grid  grid-cols-4 gap-[3rem] content-center">
+                <div>
+                    <img class="px-5" src="./assets/svg/inst.svg" alt="instacart">
+                </div>
+                <div>
+                    <img class="px-5" src="./assets/svg/salesforce.svg" alt="sales force">
+                </div>
+                <div>
+                    <img class="px-5" src="./assets/svg/amazone.svg" alt="amazone">
+                </div>
+                <div>
+                    <img class="px-5" src="./assets/svg/slack.svg" alt="Slack">
+                </div>
+                <div>
+                    <img class="px-5" src="./assets/svg/shopyfy.svg" alt="Shopify">
+                </div>
+                <div>
+                    <img class="px-5" src="./assets/svg/google.svg" alt="google">
+                </div>
+                <div>
+                    <img class="px-5" src="./assets/svg/lyft.svg" alt="Lyft">
+                </div>
+                <div>
+                    <img class="px-5" src="./assets/svg/zoom.svg" alt="zoom">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ================= end: brands ================ -->
+
+
+    <!-- =================== start: hero ======================== -->
+    <div class="bg-track-100 -z-20 pt-[12rem]">
+        <div class="w-[1290px] max-w-[80%] mx-auto">
+            <div class="grid grid-cols-4 my-[3rem]">
+                <div class="col-span-2 flex flex-col gap-4">
+                    <div class="text-primary-800 font-bold">
+                        Designed for developers
+                    </div>
+                    <h1 class=" text-stripblack-800 text-[3rem] font-bold tracking-tight leading-tight ">
+                        The world's most powerful and easy-to-use APIs
+                    </h1>      
+                    <div class="text-stripblack-900">
+                        We agonize over the right abstractions so your teams don't
+                        need to stitch together disparate systems or spend months 
+                        integrating payments functionality.
+                    </div>
+                </div>
+                <div class="col-span-2"></div>
+            </div>
+        </div>
+        <div class="grid gap-10 grid-cols-[324px_501px_256px] grid-rows-[86px_201px_126px_425px] w-[1290px] max-w-[80%] mx-auto">
+            <!-- start: row one -->
+            <div class="col-span-2">
+                <button class="z-50 flex items-center gap-2 group bg-primary-800 font-bold hover:bg-stripblack-800 text-white px-6 py-2  rounded-full cursor-pointer">
+                    <span>
+                        Start with the payments
+                    </span>
+                    <span class="flex relative">
+                        <span class="absolute opacity-0 group-hover:opacity-100 transition-all duration-300   top-0 left-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                            </svg>
+                        </span>
+                        <span class="opacity-100 group-hover:opacity-0 transition-all duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </span>
+                    </span>                      
+                </button>
+            </div>
+
+            <div class="row-span-2">
+                <img src="./assets/images/cal.png" alt="">
+            </div>
+            <!-- end: row one -->
+
+            <!-- start: row two -->
+            <div class="">
+                <img class="shadow-lg rounded-lg " src="./assets/images/cards.png" alt="">
+            </div>
+            
+            <div class="row-span-2">
+                <img src="./assets/images/middlegridcard.PNG" alt="">
+            </div>
+            <!-- ends: row two -->           
+            
+            <!-- start: row two -->
+            <div class="row-span-2">
+                <img src="./assets/images/phonegrid.png" alt="">
+            </div>
+            
+            <div class="col-span-2">
+                <img src="./assets/images/radar.webp" alt="">
+            </div>
+            <!-- start: row two -->
+        </div>
+    </div>
+    <!-- =================== start: hero ======================== -->
+
+    <!-- ================ start: terminal card section ============== -->
+    <section class="relative bg-stripblack-800  py-[15rem] flex flex-col justify-center  -mt-[6%] -skew-y-6 z-20">
+        <div class="w-[1290px] max-w-[80%] mx-auto">
+            <div class="grid grid-cols-4  skew-y-6 ">
+                <div class="col-span-2 px-3 flex flex-col gap-4">
+                    <div class="text-accent-50 font-bold">
+                        Designed for developers
+                    </div>
+                    <h1 class="text-white text-[3rem] font-bold tracking-tight leading-tight ">
+                        The world's most powerful and easy-to-use APIs
+                    </h1>      
+                    <div class="text-stripblack-100">
+                        We agonize over the right abstractions so your teams don't
+                        need to stitch together disparate systems or spend months 
+                        integrating payments functionality.
+                    </div>
+                    <div class="flex items-center">
+                        <button class="z-50 flex items-center gap-2 group bg-primary-800 font-bold hover:bg-stripblack-800 text-white px-6 py-2  rounded-full cursor-pointer">
+                            <span>
+                                Read the docs
+                            </span>
+                            <span class="flex relative">
+                                <span class="absolute opacity-0 group-hover:opacity-100 transition-all duration-300   top-0 left-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                                    </svg>
+                                </span>
+                                <span class="opacity-100 group-hover:opacity-0 transition-all duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                    </svg>
+                                </span>
+                            </span>                          
+                        </button>
+                    </div>
+                </div>
+                <div class=" col-span-2 row-span-2">
+                    <img src="./assets/images/codedcard.PNG" alt="">
+                    <img src="./assets/images/terminal.PNG" alt="">
+                </div>
+                <div>
+                    <svg fill="#00d4ff" class="AnimatedIcon__icon" width="96" height="96" preserveAspectRatio="xMinYMin" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" data-js-controller="TerminalIcon">
+                        <defs>
+                        <path id="terminalIconCode" d="M44 28a4 4 0 0 1 4 4v17a4 4 0 0 1-4 4H20a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h24zm-23.2 5.17l-.67.75a.5.5 0 0 0-.02.64l.06.06 3.29 2.92-3.3 2.92a.5.5 0 0 0-.03.7l.66.76c.18.2.5.22.7.04l4.97-4.42-4.96-4.41a.5.5 0 0 0-.7.04z"></path>
+                        <path id="terminalIconCursor" d="M27.64 40h6.72c.22 0 .3.02.38.07.09.04.15.1.2.19.04.08.06.16.06.38v.72c0 .22-.02.3-.07.38a.45.45 0 0 1-.19.2c-.08.04-.16.06-.38.06h-6.72c-.22 0-.3-.02-.38-.07a.45.45 0 0 1-.2-.19c-.04-.08-.06-.16-.06-.38v-.72c0-.22.02-.3.07-.38.04-.09.1-.15.19-.2.08-.04.16-.06.38-.06z"></path>
+                        <path id="terminalIconGear" d="M42.5 42l1.13 3.13.64.13 2.24-2.46.93.38-.16 3.33c.19.11.37.23.54.36l3.02-1.42.7.71-1.41 3.02c.13.17.25.35.36.54l3.33-.16.38.93-2.46 2.24c.05.21.1.42.13.64L55 54.5v1l-3.13 1.13c-.04.25-.1.5-.15.73l2.48 2.15-.38.93-3.28-.24c-.14.24-.3.47-.47.7l1.48 2.94-.71.7-2.94-1.47c-.23.17-.46.33-.7.47l.24 3.28-.93.38-2.15-2.48c-.27.06-.54.12-.82.16L42.5 68h-1l-1.04-3.12c-.28-.04-.55-.1-.82-.16l-2.15 2.48-.93-.38.24-3.28c-.24-.14-.47-.3-.7-.47l-2.94 1.48-.7-.71 1.47-2.94c-.17-.23-.33-.46-.47-.7l-3.28.24-.38-.93 2.48-2.15a9.95 9.95 0 0 1-.16-.82L29 55.5v-1l3.12-1.04c.04-.25.08-.49.14-.73l-2.46-2.24.38-.93 3.33.16c.11-.19.23-.37.36-.54l-1.42-3.02.71-.7 3.02 1.41c.17-.13.35-.25.54-.36l-.16-3.33.93-.38 2.24 2.46s.42-.1.64-.13L41.5 42h1zM42 53a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"></path>
+                        <clipPath id="terminalIconClipPath">
+                            <use href="#terminalIconCode"></use>
+                        </clipPath>
+                        </defs>
+                    
+                        <use href="#terminalIconCode" fill="#00d4ff"></use>
+                        <use href="#terminalIconCursor" fill="#0a2540" data-js-target="TerminalIcon.cursor"></use>
+                        <use href="#terminalIconGear" fill="#7a73ff" transform-origin="42 55" data-js-target-list="TerminalIcon.gears"></use>
+                        <g clip-path="url(#terminalIconClipPath)">
+                            <use href="#terminalIconGear" fill="var(--blendIntersection)" transform-origin="42 55" data-js-target-list="TerminalIcon.gears"></use>
+                        </g>
+                        </svg>
+                    <div class="text-white text-md font-bold tracking-tight leading-tight px-3 border border-y-0 border-r-0 border-l-accent-50">
+                        Tools for every stack
+                    </div>
+                    <div class="text-stripblack-100 px-3 text-sm">
+                        We offer client and server libraries in everything from React and PHP to .NET and iOS.
+                    </div>
+                    <div class="flex items-center  px-3">
+                        <button class="z-50 flex items-center gap-2 group bg-transparent font-bold text-white py-2  rounded-full cursor-pointer">
+                            <span class=" text-accent-50 hover:text-stripblack-800">
+                                See libraries
+                            </span>
+                            <span class="flex relative">
+                                <span class="absolute opacity-0 group-hover:opacity-100 transition-all duration-300  top-0 left-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#425466" class="w-4 h-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                                    </svg>
+                                </span>
+                                <span class="opacity-100 group-hover:opacity-0 transition-all duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"  class="w-4 h-4 stroke-accent-50">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                    </svg>
+                                </span>
+                            </span>                      
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <svg fill="#00d4ff" class="AnimatedIcon__icon" width="96" height="96" preserveAspectRatio="xMinYMin" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" data-js-controller="BlocksIcon">
+                        <defs>
+                        <path id="blocksIconBack" d="M30.68 31.37l9 4.15A4 4 0 0 1 42 39.15v10.89a4 4 0 0 1-2.32 3.63l-9 4.15a4 4 0 0 1-3.36 0l-9-4.15A4 4 0 0 1 16 50.04V39.15a4 4 0 0 1 .35-1.62L29 43.36v-1.54l-11.85-5.47a4 4 0 0 1 1.17-.83l9-4.15a4 4 0 0 1 3.36 0z"></path>
+                        <path id="blocksIconFront" d="M55 45.15v10.89a4 4 0 0 1-2.32 3.63l-9 4.15a4 4 0 0 1-3.36 0l-9-4.15A4 4 0 0 1 29 56.04V45.15a4 4 0 0 1 .35-1.62L42 49.37l12.65-5.84a4 4 0 0 1 .35 1.62zm-11.32-7.78l9 4.15a4 4 0 0 1 1.17.83L42 47.82l-11.86-5.47a4 4 0 0 1 1.18-.83l9-4.15a4 4 0 0 1 3.36 0z"></path>
+                        <clipPath id="blocksIconClipPath">
+                            <use data-js-target-list="BlocksIcon.firstBackBlocks" href="#blocksIconFront" transform="translate(-13, -6)" data-js-bbox="firstHiddenBlock"></use>
+                            <use data-js-target-list="BlocksIcon.secondBackBlocks" href="#blocksIconFront" transform="translate(-65, -30)" data-js-bbox="secondHiddenBlock"></use>
+                        </clipPath>
+                        </defs>
+                        <use data-js-target="BlocksIcon.firstHiddenBlock" href="#blocksIconFront" transform="translate(-13, -6)" style="visibility: hidden;"></use>
+                        <use data-js-target="BlocksIcon.secondHiddenBlock" href="#blocksIconFront" transform="translate(-65, -30)" style="visibility: hidden;"></use>
+                        <use data-js-target-list="BlocksIcon.secondBackBlocks" href="#blocksIconFront" fill="#80e9ff" style="opacity: 0;"></use>
+                        <use data-js-target-list="BlocksIcon.secondFrontBlocks" href="#blocksIconFront" fill="#7a73ff" style="opacity: 0;"></use>
+                        <use data-js-target-list="BlocksIcon.firstBackBlocks" href="#blocksIconFront" fill="#80e9ff" transform="translate(-13, -6)"></use>
+                        <use data-js-target-list="BlocksIcon.firstFrontBlocks" href="#blocksIconFront" fill="#7a73ff"></use>
+                        <g clip-path="url(#blocksIconClipPath)">
+                        <use data-js-target-list="BlocksIcon.firstFrontBlocks" href="#blocksIconFront" fill="#cff"></use>
+                        <use data-js-target-list="BlocksIcon.secondFrontBlocks" href="#blocksIconFront" fill="#cff" style="opacity: 0;"></use>
+                        </g>
+                    </svg>
+                    <div class="text-white text-md font-bold tracking-tight leading-tight px-3 border border-y-0 border-r-0 border-l-accent-50">
+                        Prebuilt integrations
+                    </div>
+                    <div class="text-stripblack-100 px-3 text-sm">
+                        Use integrations for systems like Shopify,
+                        WooCommerce, NetSuite, and more
+                    </div>
+                    <div class="flex items-center  px-3">
+                        <button class="z-50 flex items-center gap-2 group bg-transparent font-bold text-white py-2  rounded-full cursor-pointer">
+                            <span class=" text-accent-50 hover:text-stripblack-800">
+                                Explore partners
+                            </span>
+                            <span class="flex relative">
+                                <span class="absolute opacity-0 group-hover:opacity-100 transition-all duration-300  top-0 left-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#425466" class="w-4 h-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                                    </svg>
+                                </span>
+                                <span class="opacity-100 group-hover:opacity-0 transition-all duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"  class="w-4 h-4 stroke-accent-50">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                    </svg>
+                                </span>
+                            </span>                      
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>   
+    <!-- ================== End: terminal card section ============== -->
+
+
+    <div class="bg-white  -skew-y-6 z-20 py-[5rem]">
+        <div class="w-[1290px] max-w-[80%] mx-auto">
+            <div class="py-[6rem] flex flex-col gap-10 skew-y-6 ">
+                <div class="grid grid-cols-4 gap-9">
+                    <div class="col-span-4 flex flex-col gap-3 px-3">
+                        <div class="text-primary-800 text-lg font-semibold">
+                            Why Stripe
+                        </div>
+                        <div class="text-stripblack-800 text-3xl font-bold">
+                            A technology-first approach to payments and finance
+                        </div>
+                    </div>             
+                </div>
+                <div class="grid grid-cols-4 ">
+                    <div class="flex flex-col gap-2">
+                        <div class="px-3">
+                            <img class="w-12 " src="./assets/images/snowflex.PNG" alt="Prime">
+                        </div>
+                        <div class=" text-stripblack-800 text-md font-bold  border-l border-l-primary-800 px-3">
+                            Fastest-improving platform
+                        </div>
+                        <div class="text-stripblack-900 px-3 text-sm">
+                            We release
+                            <span class="text-primary-800 ">
+                                hundreds of features
+                            </span> 
+                            and improvements each year to help you stay ahead of industry shifts. (On average, we deploy our production API 16x per day.)
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <div class="px-3">
+                            <img class="w-12 " src="./assets/images/snowflex.PNG" alt="Prime">
+                        </div>
+                        <div class=" text-stripblack-800 text-md font-bold  border-l border-l-primary-800 px-3">
+                            Close to the metal
+                        </div>
+                        <div class="text-stripblack-900 px-3 text-sm">
+                            From <span class="text-primary-800" > direct integrations</span>
+                            with card networks and banks to checkout flowas in the browser we operate on and optmize at every level of financial stack.
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <div class="px-3">
+                            <img class="w-12 " src="./assets/images/wave.PNG" alt="Prime">
+                        </div>
+                        <div class=" text-stripblack-800 text-md font-bold  border-l border-l-primary-800 px-3">
+                            Battle-tested reliability
+                        </div>
+                        <div class="text-stripblack-900 px-3 text-sm"> 
+                            Our systems operate with <span class="text-primary-800" > 99.99%+</span>
+                            uptime and are highly scalable and redundant. Stripe is certified to the highest compliance standards.
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <div class="px-3">
+                            <img class="w-12 " src="./assets/images/settings.PNG" alt="Prime">
+                        </div>
+                        <div class=" text-stripblack-800 text-md font-bold  border-l border-l-primary-800 px-3">
+                            Battle-tested reliability
+                        </div>
+                        <div class="text-stripblack-900 px-3 text-sm">
+                            Our machine learning models train on <span class="text-primary-800" >billions</span>  of data points and help increase revenue across conversion, fraud, revenue recovery, and more.
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <!-- ================ start: world section ============== -->
+    <section class="relative bg-stripblack-800  py-[15rem] flex flex-col justify-center -z-20 -mt-[6%]">
+        <div class="absolute top-0 z-0">
+            <img class="top-0 -z-50" src="" alt="">
+        </div>
+        <div class="w-[1280px] max-w-[80%] mx-auto">
+            <div class="grid grid-cols-4 px-3 z-20">
+                <div class="col-span-2 flex flex-col gap-4">
+                    <div class="text-accent-50 font-bold">
+                        Global scale
+                    </div>
+                    <h1 class="text-white text-[3rem] font-bold tracking-tight leading-tight ">
+                        The backbone for internet business
+                    </h1>      
+                    <div class=" text-stripblack-100">
+                        For ambitious companies around the world, Stripe makes moving money as simple, borderless, and programmable as the rest of the internet. Our teams are based in dozens of offices around the world and we process
+                        hundreds of billions of dollars each year for 
+                        <span class="text-accent-50">
+                            startups to Fortune 500s.
+                        </span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-[1280px] max-w-[80%] mx-auto">
+            <div class="grid grid-cols-4 text-white mt-[3rem]">
+                <div>
+                    <div class="text-white text-[2rem] font-bold tracking-tight leading-tight px-3 border border-y-0 border-r-0 border-l-accent-50">
+                        250M+
+                    </div>
+                    <div class="text-stripblack-100 px-3">
+                        API requests per day, peaking, at 
+                        13,000 reqeust a second
+                    </div>
+                </div>
+                <div>
+                    <div class="text-white text-[2rem] font-bold tracking-tight leading-tight px-3 border border-y-0 border-r-0 border-l-accent-50">
+                        90%
+                    </div>
+                    <div class="text-stripblack-100 px-3">
+                        of U.S. adults have bought from businesses using Stripe.
+                    </div>
+                </div>
+                <div>
+                    <div class="text-white text-[2rem] font-bold tracking-tight leading-tight px-3 border border-y-0 border-r-0 border-l-accent-50">
+                        134+
+                    </div>
+                    <div class="text-stripblack-100 px-3">
+                        currencies and payments methodes supported
+                    </div>
+                </div>
+                <div>
+                    <div class="text-white text-[2rem] font-bold tracking-tight leading-tight px-3 border border-y-0 border-r-0 border-l-accent-50">
+                        35+
+                    </div>
+                    <div class="text-stripblack-100 px-3">
+                        countries with local acquiring
+                        optimizing acceptance rates.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>   
+    <!-- ================== End: world section ============== -->
+
+    <div class="w-[1290px] max-w-[80%] mx-auto">
+        <div class="grid grid-cols-4 z-50  mt-[6rem]">
+            <div class="col-span-2 flex flex-col gap-4 px-3">
+                <div class=" text-stripblack-800 text-xl font-bold">
+                    Ready to get started?
+                </div>
+                <div class="text-lg text-stripblack-900">
+                    Explore 
+                    <span class="font-bold text-primary-800">
+                        Stripe Payments,
+                    </span>   or create an account instantly and start
+                    accepting payments. You can also contact us to design a custom package
+                    for your business.
+                </div>
+                <div class="flex items-center">
+                    <button class="z-50 flex items-center gap-2 group bg-primary-800 font-bold hover:bg-stripblack-800 text-white px-6 py-2  rounded-full cursor-pointer">
+                        <span>
+                            Start now
+                        </span>
+                        <span class="flex relative">
+                            <span class="absolute opacity-0 group-hover:opacity-100 transition-all duration-300   top-0 left-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                                </svg>
+                            </span>
+                            <span class="opacity-100 group-hover:opacity-0 transition-all duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg>
+                            </span>
+                        </span>
+                            
+                    </button>
+                    <button class="z-50 flex items-center gap-2 group bg-transparent font-bold text-white px-6 py-2  rounded-full cursor-pointer">
+                        <span class=" text-stripblack-800">
+                            Contact sales
+                        </span>
+                        <span class="flex relative">
+                            <span class="absolute opacity-0 group-hover:opacity-100 transition-all duration-300  top-0 left-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#425466" class="w-4 h-4 ">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                                </svg>
+                            </span>
+                            <span class="opacity-100 group-hover:opacity-0 transition-all duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#425466" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg>
+                            </span>
+                        </span>                      
+                    </button>
+                </div>
+            </div>
+            <div class="flex flex-col gap-2">
+                <div class="px-3">
+                    <img class="w-12 " src="./assets/images/prime.PNG" alt="Prime">
+                </div>
+                <div class=" text-stripblack-800 text-md font-bold  border-l border-l-primary-800 px-3">
+                    Always know that you pay
+                </div>
+                <div class="text-md text-stripblack-900 px-3">
+                    Integrated per-transaction 
+                    oricing with ni hidden fees.
+                </div>
+                <div class="flex items-center px-3">
+                    <button class="z-50 flex items-center gap-2 group bg-transparent font-bold text-white py-2  rounded-full cursor-pointer">
+                        <span class=" text-primary-800 hover:text-stripblack-800">
+                            Price details
+                        </span>
+                        <span class="flex relative">
+                            <span class="absolute opacity-0 group-hover:opacity-100 transition-all duration-300  top-0 left-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#425466" class="w-4 h-4 ">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                                </svg>
+                            </span>
+                            <span class="opacity-100 group-hover:opacity-0 transition-all duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"  class="w-4 h-4 stroke-primary-800">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg>
+                            </span>
+                        </span>                      
+                    </button>
+                </div>
+            </div>
+            <div class="flex flex-col gap-2">
+                <div class="px-3">
+                    <img class="w-8" src="./assets/images/twocards.PNG" alt="Two card code">
+                </div>
+                <div class=" text-stripblack-800 text-md font-bold border-l border-l-primary-800  px-3">
+                    Start your integration
+                </div>
+                <div class="text-md text-stripblack-900  px-3">
+                    Get up and running with Stripe
+                    in as little as 10 minutes
+                </div>
+                <div class="flex items-center  px-3">
+                    <button class="z-50 flex items-center gap-2 group bg-transparent font-bold text-white py-2  rounded-full cursor-pointer">
+                        <span class=" text-primary-800 hover:text-stripblack-800">
+                            Api reference
+                        </span>
+                        <span class="flex relative">
+                            <span class="absolute opacity-0 group-hover:opacity-100 transition-all duration-300  top-0 left-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#425466" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                                </svg>
+                            </span>
+                            <span class="opacity-100 group-hover:opacity-0 transition-all duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"  class="w-4 h-4 stroke-primary-800">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg>
+                            </span>
+                        </span>                      
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="relative bg-track-100  py-[6rem] mt-[12rem] -z-10 ">
+        <div class="bg-track-100 -z-10  h-[500px] w-full absolute -skew-y-6 -top-20 right-0 ">
+        </div>
+        <div class="w-[1290px] max-w-[80%] mx-auto">
+            <div class="grid grid-cols-4 z-10">
+                <div class="px-3">
+                    <img src="./assets/svg/footerLogo.svg" alt="" >
+                    <ul>
+                        <li class="flex gap-3 items-center">
+                            <span>
+                                <svg fill="#0A2540" width="16" height="16" viewBox="0 0 16 16">      
+                                    <path d="M3.54 8.04h4.42v4.43c0 .57.76.75 1.01.24l4.96-9.93a.54.54 0 0 0-.72-.72L3.3 7.03c-.5.25-.33 1.01.24 1.01" fill="#0A2540" fill-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                            <a class="text-slate-600" href="#">United States</a>
+                        </li>
+                        <li class="flex gap-3 items-center">
+                            <span>
+                                <svg fill="#0A2540" width="16" height="16" viewBox="0 0 16 16">      
+                                    <path d="M7.5 2C10.91 2 13 4.01 13 6.5c0 2.07-1.45 3.82-3.92 4.34L6.62 13.3a.66.66 0 0 1-1.12-.46v-2.1C3.29 10.12 2 8.45 2 6.5 2 4.01 4.09 2 7.5 2z" fill="#0A2540" fill-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                            <a class="text-slate-600" href="#">English (United State)</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="px-3">
+                    <ul class="flex flex-col gap-2">
+                        <li class="flex gap-2 items-center">
+                            <a class="text-slate-600 font-semibold" href="#">Products</a>
+                        </li>
+                        <li class="flex gap-2 items-center text-md">
+                            <a class="text-slate-600" href="#">Atlas</a>
+                        </li>
+                        <li class="flex gap-2 items-center text-md">
+                            <a class="text-slate-600" href="#">Capital</a>
+                        </li>
+                        <li class="flex gap-2 items-center text-md">
+                            <a class="text-slate-600" href="#">Checkout</a>
+                        </li>
+                        <li class="flex gap-2 items-center text-md">
+                            <a class="text-slate-600" href="#">Connect</a>
+                        </li>
+                        <li class="flex gap-2 items-center text-md">
+                            <a class="text-slate-600" href="#">Coparate card</a>
+                        </li>
+                        <li class="flex gap-2 items-center text-md">
+                            <a class="text-slate-600" href="#">Climate</a>
+                        </li>
+                        <li class="flex gap-2 items-center text-md">
+                            <a class="text-slate-600" href="#">Identity</a>
+                        </li>
+                        <li class="flex gap-2 items-center text-md">
+                            <a class="text-slate-600" href="#">Link</a>
+                        </li>
+                        <li class="flex gap-2 items-center text-md">
+                            <a class="text-slate-600" href="#">Identity</a>
+                        </li>
+                        <li class="flex gap-2 items-center text-md">
+                            <a class="text-slate-600" href="#">Link</a>
+                        </li>
+                        <li class="flex gap-2 items-center text-md">
+                            <a class="text-slate-600" href="#">Identity</a>
+                        </li>
+                        <li class="flex gap-2 items-center text-md">
+                            <a class="text-slate-600" href="#">Link</a>
+                        </li>
+                        <li class="flex gap-2 items-center text-md">
+                            <a class="text-slate-600" href="#">Identity</a>
+                        </li>
+                        <li class="flex gap-2 items-center text-md">
+                            <a class="text-slate-600" href="#">Link</a>
+                        </li>
+                        <li class="flex gap-2 items-center text-md">
+                            <a class="text-slate-600" href="#">Identity</a>
+                        </li>
+                        <li class="flex gap-2 items-center text-md">
+                            <a class="text-slate-600" href="#">Link</a>
+                        </li>
+                        <li class="flex gap-2 items-center text-md">
+                            <a class="text-slate-600" href="#">Identity</a>
+                        </li>
+                        <li class="flex gap-2 items-center text-md">
+                            <a class="text-slate-600" href="#">Link</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="px-3">
+                    <ul class="flex flex-col gap-2">
+                        <li class="flex gap-2 items-center">
+                            <a class="text-slate-600 font-semibold" href="#">Use cases</a>
+                        </li>
+                        <li class="flex gap-2 items-center text-md">
+                            <a class="text-slate-600" href="#">Atlas</a>
+                        </li>
+                        <li class="flex gap-2 items-center text-md">
+                            <a class="text-slate-600" href="#">Capital</a>
+                        </li>
+                        <li class="flex gap-2 items-center text-md">
+                            <a class="text-slate-600" href="#">Checkout</a>
+                        </li>
+                        <li class="flex gap-2 items-center text-md">
+                            <a class="text-slate-600" href="#">Connect</a>
+                        </li>
+                        <li class="flex gap-2 items-center text-md">
+                            <a class="text-slate-600" href="#">Coparate card</a>
+                        </li>
+                        <li class="flex gap-2 items-center text-md">
+                            <a class="text-slate-600" href="#">Climate</a>
+                        </li>
+                        <li class="flex gap-2 items-center text-md">
+                            <a class="text-slate-600" href="#">Identity</a>
+                        </li>
+                        <li class="flex gap-2 items-center text-md">
+                            <a class="text-slate-600" href="#">Link</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="px-3">
+                    <ul class="flex flex-col gap-2">
+                        <li class="flex gap-2 items-center">
+                            <a class="text-slate-600 font-semibold" href="#">Resources</a>
+                        </li>
+                        <li class="flex gap-2 items-center text-md">
+                            <a class="text-slate-600" href="#">Atlas</a>
+                        </li>
+                        <li class="flex gap-2 items-center text-md">
+                            <a class="text-slate-600" href="#">Capital</a>
+                        </li>
+                        <li class="flex gap-2 items-center text-md">
+                            <a class="text-slate-600" href="#">Checkout</a>
+                        </li>
+                        <li class="flex gap-2 items-center text-md">
+                            <a class="text-slate-600" href="#">Connect</a>
+                        </li>
+                        <li class="flex gap-2 items-center text-md">
+                            <a class="text-slate-600" href="#">Coparate card</a>
+                        </li>
+                        <li class="flex gap-2 items-center text-md">
+                            <a class="text-slate-600" href="#">Climate</a>
+                        </li>
+                        <li class="flex gap-2 items-center text-md">
+                            <a class="text-slate-600" href="#">Identity</a>
+                        </li>
+                        <li class="flex gap-2 items-center text-md">
+                            <a class="text-slate-600" href="#">Link</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer> 
+
+</body>
+
+</html>

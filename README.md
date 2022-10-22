@@ -1,1 +1,1 @@
-# stripe-clonep
+# stripe-clone
