@@ -6,7 +6,6 @@
   "version": "1.0.0",
   "main": "tailwind.config.js",
   "scripts": {
-    "build": "npx tailwindcss -c ./tailwind.config.js -i ./style/main.css -o ./dist/output.css",
     "generate": "npx tailwindcss -c ./tailwind.config.js -i ./style/main.css -o ./dist/output.css --watch"
   },
   "keywords": [],
